@@ -2,31 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
 <body>
-    <script>
-        let x = 5;
-        x = 5 * x;
-        // console.log 會顯示在開發工具的控制台
-        console.log(x);
+  <script>
+    let x = 5;
+    x = 5 * x;
+    // console.log 會顯示在開發工具的控制台, 網頁 F12 console
+    console.log(x);
 
-        // 一次宣告多個變數，可以寫在同一行用逗號分隔
-        let a = 0, b = 10;
-        a = b++;
-        console.log(a, b);
+    // 一次宣告多個變數，可以寫在同一行用逗號分隔
+    /* a = b++ 代表先執行 a = b，才執行 b = b + 1
+      a = ++b 代表先執行 b = b + 1，才執行 a=b
+      b-- 和 --b 也是一樣的運作方式 
+    */
+    let a = 0, b = 10;
+    a = b++;
+    console.log(a, b);
 
-        // 宣告時可以同時做運算
-        let c = 777, d = c % 7 + 7;
-        console.log(d);
-
-
-
-    </script>
+    // 宣告時可以同時做運算
+    let c = 777, d = c % 7 + 7;
+    console.log(d);
+  </script>
 </body>
 
 </html>
